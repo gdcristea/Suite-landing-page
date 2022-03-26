@@ -1,0 +1,509 @@
+/* General */
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Epilogue', sans-serif;
+    background-color: #FAF8F6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img,
+picture,
+svg {
+    max-width: 100%;
+    display: inline-block;
+}
+
+picture {
+    text-align: center;
+}
+
+/* Common properties */
+h1,
+.btn-light,
+.stats {
+    color: #172339;
+}
+
+.btn-dark,
+.review {
+    background-color: #172339;
+}
+
+h2,
+.btn-dark {
+    color:#FAF8F6;
+}
+
+.hero-paragraph,
+.footer-container p,
+.stats-headings {
+    color: #49566D;
+}
+
+.accent,
+.btn,
+.stats {
+    font-weight: 700;
+}
+
+.upp,
+.stats-headings {
+    text-transform: uppercase;
+}
+
+.position,
+.stats-headings {
+    letter-spacing: 2.5px;
+}
+
+/* Logo */
+.logo {
+    width: 5.0625rem;
+    height: 2rem;
+}
+
+/* Line */
+.hero-heading-word {
+    position: relative;
+    display: inline-block;
+}
+
+.hero-heading-word svg {
+    position: absolute;
+    display: block;
+    top: -2rem;
+}
+
+/* Headings */
+h1,
+h2 {font-weight: 400;}
+
+h1 {
+    font-size: 2.375rem;
+    line-height: 2.75rem;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    margin: 2.3125rem 0 2.5rem;
+}
+
+/* Buttons */
+.btn {
+    border-radius: 6px;
+    display: inline-block;
+}
+
+.btn-light {
+    font-size: 0.875rem;
+    padding: 0.75rem 1rem;
+    border: 1px solid #172339; 
+    line-height: 1.5rem;
+}
+
+.btn-light:hover,
+.btn-light:focus {
+    background-color: #172339;
+    color:#FAF8F6;
+}
+
+.btn-dark {
+    font-size: 1.125rem;
+    padding: 0.9375rem 2rem;
+    line-height: 2rem;
+    margin-right: auto;
+}
+
+.btn-dark:hover,
+.btn-dark:focus {
+    background: rgb(160,96,255);
+    background: linear-gradient(160deg, rgba(160,96,255,1) 40%, rgba(203,48,227,1) 63%, rgba(255,168,78,1) 98%);
+}
+
+/* Paragraphs */
+.hero-paragraph {
+    margin-bottom: 2rem;
+    line-height: 1.7;
+    text-align: justify;
+    line-height: 1.75rem;
+}
+
+.review-text {
+    font-size: 1.125rem;
+    line-height: 2rem;
+}
+
+.position {
+    font-size: 1rem !important;
+    line-height: 1.625rem;
+}
+
+/* Stats */
+.hero-stats {
+    list-style: none;
+    text-align: center;
+}
+
+li {
+    margin-bottom: 2rem;
+
+}
+
+li:last-child {
+    margin-bottom: 14.8125rem;
+}
+
+.stats {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    line-height: 3.5rem;
+}
+
+.stats-headings {
+    line-height: 1.625rem;
+}
+
+/* SECTIONS */
+/* Header section */
+.container {
+    width: 90%;
+    max-width: 1110px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+    margin-bottom: 4.375rem;
+}
+
+/* Hero section*/
+.hero-container {
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    grid-template-areas: 
+        "title"
+        "par"
+        "btn"
+        "img"
+        "stats";
+}
+
+h1 {
+    grid-area: title;
+}
+
+.hero-paragraph {
+    grid-area: par;
+}
+
+.btn-dark {
+    grid-area: btn;
+}
+
+.hero-image {
+    grid-area: img;
+    margin: 3.5rem 0;
+}
+
+.hero-stats {
+    grid-area: stats;
+}
+
+/* Review section */
+.review {
+    color: #F3EDE7;
+    max-width: 1110px;
+    text-align: center;
+    border-radius: 15px;
+    background-image: url('assets/blur/pattern-blur.svg');
+    background-repeat: no-repeat;
+    background-position: 50% -70%;
+    background-size: 29.6875rem;
+    margin-bottom: -33.75rem;
+    z-index: 2;
+    position: relative;
+}
+
+.review-image {
+    margin: -11.3125rem auto 2.5rem;
+    width: 15.75rem;
+    height: 25.125rem;
+}
+
+.review-img-line {
+    margin-bottom: 2.3125rem;
+}
+
+.review-line {
+    width: 3.079375rem;
+    height: 2.5rem;       
+}
+
+.review-content,
+.review-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.review-text {
+    margin-bottom: 2.5rem;
+}
+
+.review-person {
+    margin-bottom: 4rem;
+}
+
+/* Footer section */
+footer {
+    background-color: #F3EDE7;
+    padding: 37rem 0 5rem;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-container p {
+    font-size: 0.9375rem;
+    line-height: 2rem;
+}
+
+.footer-flex-item + 
+.footer-flex-item {
+    margin-top: 2.0625rem;
+}
+
+.social-media-links + 
+.social-media-links {
+    margin-left: 1.75rem;
+}
+
+.social-media-links img:hover,
+.social-media-links img:focus {
+    opacity: .5;
+}
+
+/* TABLET */
+@media (min-width: 780px) {
+    
+    /* Headings */
+    h1 {
+        font-size: 3.5rem;
+        line-height: 4rem;
+    }
+
+    h1,
+    .hero-paragraph,
+    .btn-dark {
+        margin-bottom: 2.5rem;
+    }
+
+    /* Line */
+    .hero-heading-word svg {
+        top: -2.5rem;
+    }
+
+    /* Buttons */
+    .btn-light {
+        font-size: 1rem;
+        line-height: 2rem;
+        padding: 0.75rem 1.5rem;
+    }
+
+    /* Header section */
+    header {
+        margin-bottom: 5rem;
+    }
+  
+    /* Hero section */
+    .hero-container {
+        grid-template-areas:
+            ". . . . img img"
+            "title title title . img img"
+            "par . . . img img"
+            "btn . . . img img"
+            "stats stats stats stats stats stats"
+            ;
+    }
+
+    .hero-image {
+        width: 17.5625rem;
+        height: 30.125rem;
+        margin: 0;
+        z-index: -1;
+        grid-column: 3 / 7;
+    }
+   
+    .hero-stats {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 3.4375rem;
+        margin-bottom: 18.125rem;
+        margin-top: 5.5rem;
+    }
+
+    li {
+        margin-bottom: 0;
+    }
+
+    li:last-child {
+        margin-bottom: 0;
+    }
+    
+    /* Review section */
+    .review {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: -30rem;
+    }
+    
+    /* Footer section */
+    footer {
+        padding: 35.3125rem 0 4.5rem;
+    }
+
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer-flex-item + 
+    .footer-flex-item {
+        margin-top: 0;
+}
+}
+
+/* DESKTOP */
+@media (min-width: 1440px) {
+
+    /* Header section */
+    header {
+        margin-bottom: 4.5rem;
+    }
+    
+    /* Hero section */
+    h1 {
+        font-size: 4.5rem;
+        line-height: 4.875rem;
+        letter-spacing: 3.2px;
+    }
+
+    .hero-paragraph {
+        font-size: 1.125rem;
+        line-height: 2rem;
+        margin-bottom: 3.25rem;
+    }
+
+    .hero-image {
+        width: 21.875rem;
+        height: 37.5rem;
+    }
+
+    .btn-dark {
+        margin-bottom: 5.125rem;
+    }
+
+    .hero-stats {
+        flex-direction: column;
+        padding: 0;
+        margin: 0 auto 0;
+    }
+
+    li + li {
+        margin-top: 3.9375rem;
+    }
+
+    .hero-container {
+        grid-template-areas:
+            ". . . . . img . stats"
+            "title title title . . img . stats"
+            "par . . . . img . stats"
+            "btn . . . . img . stats"
+            ;
+    }
+
+    .hero-image {
+        grid-column: 3 / 6;
+    }
+
+    /* Review section */
+    .review {
+        background-position: 10% 500%;
+        margin-top: 12.4375rem;
+        margin-bottom: -13.75rem;
+    }
+    
+    .review-image {
+        margin: 0;
+        margin-top: -13.4375rem;
+        width: 40%;
+    }
+
+    .review-image img {
+        width: 21.5625rem;
+    }
+
+    h2 {
+        margin-top: 5.5rem;
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+
+    .review-text {
+        font-size: 1.25rem;
+        line-height: 2.1875rem;
+    }
+
+    .review-content {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .review-person p {
+        font-size: 1.125rem;
+    }
+
+    .review-details {
+        text-align: left;
+        width: 35%;
+    }
+
+    .review-line {
+        width: 4rem;
+        height: 3.25rem;  
+    }
+
+    .review-line-container {
+        align-self: flex-start;
+        margin-top: 9.375rem;
+        margin-right: 1.875rem;
+    }
+
+    /* Footer section */
+    footer {
+        padding-top: 18.75rem;
+    }
+}
+
+ 
