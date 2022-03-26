@@ -24,9 +24,9 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: https://github.com/gdcristea/equalizer-landing-page
+- Solution URL: https://github.com/gdcristea/Suite-landing-page
 
-- Live Site URL: https://gdcristea.github.io/equalizer-landing-page/
+- Live Site URL: https://gdcristea.github.io/Suite-landing-page/
 
 
 ## Author
